@@ -74,7 +74,7 @@ kubectl apply -f kube/deployment.yaml
 ```
 15. Visit your new endpoint
 16. Read your app logs
-  - visit: https://console.cloud.google.com/logs/viewer?project=versus-project-192600&resource=container%2Fcluster_name%2Ffippy%2Fnamespace_id%2Fdefault
+  - visit: [https://console.cloud.google.com/logs/](https://console.cloud.google.com/logs/viewer?project=versus-project-192600&resource=container%2Fcluster_name%2Ffippy%2Fnamespace_id%2Fdefault)
   - filter by `<your-app-name>` from "All Logs" dropdown
 17. Delete deployment and service
 ```console
