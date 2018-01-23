@@ -37,7 +37,7 @@ cd kubernetes-course
 ```console
 # Don't forget the `.` at the end which is the directory you'll upload to gcloud
 
-gcloud container builds submit --tag gcr.io/versus-project-192600/<your-app-name>:<your-app-tag> .
+gcloud container builds submit --tag gcr.io/versus-project-192600/<your-app-name>:<your-app-tag> . --project versus-project-192600
 
 # https://console.cloud.google.com/gcr/images/versus-project-192600?project=versus-project-192600
 ```
@@ -129,7 +129,7 @@ helm upgrade <release-name> -f <values.yaml>
 
 1. Create a helm chart
 ```console
-helm create chart/
+helm create chart
 ```
 2. Upgrade `chart/values.yaml`
 ```yaml
