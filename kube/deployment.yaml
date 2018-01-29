@@ -1,24 +1,24 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: <your-app-name>
+  name: eleanorscoolapp 
   labels:
-    app: <your-app-name>
+    app: eleanorscoolapp 
     environment: production
     anyotherlabel: something
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: <your-app-name>
+      app: eleanorscoolapp 
   template:
     metadata:
       labels:
-        app: <your-app-name>
+        app: eleanorscoolapp 
     spec:
       containers:
-      - name: <your-app-name>
-        image: gcr.io/versus-project-192600/<your-app-name>:<your-app-tag>
+      - name: eleanorscoolapp 
+        image: gcr.io/versus-project-192600/eleanorscoolapp:mytag
         ports:
           - containerPort: 3000
-        command: ["ruby", "app.rb"]
+        command: ["ruby", "eleanorscoolapp.rb"]

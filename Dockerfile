@@ -4,7 +4,7 @@ FROM ruby:alpine
 
 COPY Gemfile .
 COPY Gemfile.lock .
-COPY app.rb .
+COPY eleanorscoolapp.rb .
 
 ENV RACK_ENV production
 
@@ -17,4 +17,4 @@ EXPOSE 3000
 ENV PORT 3000
 
 ENTRYPOINT ["ruby"]
-CMD ["app.rb"]
+CMD ["eleanorscoolapp.rb"]

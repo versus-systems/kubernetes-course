@@ -6,7 +6,7 @@ require 'uri'
 set :bind, '0.0.0.0'
 
 get '/' do
-  "Steven is awesome"
+  'Eleanor rulez'
 end
 
 get '/quote' do

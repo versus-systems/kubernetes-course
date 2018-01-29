@@ -1,13 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: <your-app-name>
+  name: eleanorscoolapp 
 spec:
   type: LoadBalancer
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      name: <your-app-name>
+      name: eleanorscoolapp 
   selector:
-    app: <your-app-name>
+    app: eleanorscoolapp 
