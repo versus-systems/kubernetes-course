@@ -11,7 +11,7 @@ docker build . -t <your-app-name>:<tag-name>
 docker run -p 3000:3000 <your-app-name>:<tag-name>
 ```
 
-# Kubernetes curse
+# Kubernetes course
 
 Connect to fippy cluster
 ```console
