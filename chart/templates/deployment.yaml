@@ -23,6 +23,11 @@ spec:
                 configMapKeyRef:
                   name: eleanorsservice
                   key: url
+            - name: PING_API_URL
+              valueFrom:
+                secretKeyRef:
+                    name: service
+                    key: url
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
