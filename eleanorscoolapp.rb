@@ -10,7 +10,7 @@ get '/' do
 end
 
 get '/quote' do
-  uri = URI("http://quotes.rest/qod.json")
+  uri = URI(ENV["SERVICE_URL"])
   Net::HTTP.get(uri)
 end
 

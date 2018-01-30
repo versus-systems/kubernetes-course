@@ -20,10 +20,6 @@ http://localhost:8001/ui
   ```
   - create your own namespace.
   ```
-  kubectl create namespace <your-namespace-name>
-  ```
-  - Submit and build your Dockerfile.
-  ```
   gcloud container builds submit --tag gcr.io/versus-project-192600/<your-app-name>:<semver-tag> . --project versus-project-192600
   ```
   - Create a helm chart
@@ -90,6 +86,7 @@ http://localhost:8001/ui
 	```console
   helm upgrade <your-release-name> chart/
 	```
+//Eleanor stopped here
 	- Make sure there is no errors.
 
 - Connect to an internal service using a secret [[docks](https://kubernetes.io/docs/concepts/configuration/secret/)].

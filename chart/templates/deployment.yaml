@@ -17,6 +17,12 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
+          env:
+            - name: SERVICE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: eleanorsservice
+                  key: url
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:

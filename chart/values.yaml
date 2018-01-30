@@ -2,9 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 1
+app:
+  url: http://quotes.rest/qod.json
 image:
   repository: gcr.io/versus-project-192600/eleanorscoolapp
-  tag: mytag
+  tag: newtag
   pullPolicy: IfNotPresent
 service:
   name: eleanorscoolapp
